@@ -1,0 +1,21 @@
+[
+  {
+    "Classification": "capacity-scheduler",
+    "Properties": {
+      "yarn.scheduler.capacity.resource-calculator": "org.apache.hadoop.yarn.util.resource.DominantResourceCalculator"
+    }
+  },
+  {
+    "Classification": "yarn-site",
+    "Properties": {
+      "yarn.nodemanager.aux-services": "spark_shuffle,"
+    }
+  },
+  {
+    "Classification": "spark-defaults",
+    "Properties": {
+      "spark.executor.memory": "2G",
+      "spark.driver.memory": "2G"
+    }
+  }
+]

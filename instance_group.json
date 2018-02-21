@@ -1,0 +1,26 @@
+[
+  {
+    "InstanceCount": 2,
+    "Name": "cores",
+    "InstanceGroupType": "CORE",
+    "EbsConfiguration": {
+      "EbsOptimized": false,
+      "EbsBlockDeviceConfigs": [
+        {
+          "VolumeSpecification": {
+            "VolumeType": "standard",
+            "SizeInGB": 80
+          },
+          "VolumesPerInstance": 1
+        }
+      ]
+    },
+    "InstanceType": "r4.xlarge"
+  },
+  {
+    "InstanceCount": 1,
+    "Name": "master",
+    "InstanceGroupType": "MASTER",
+    "InstanceType": "m4.xlarge"
+  }
+]
